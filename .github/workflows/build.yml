@@ -12,8 +12,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Install yaml2json
-        run: python3 -m pip install remarshal
-        run: python3 -m pip install setuptools
+        run: |
+        python3 -m pip install remarshal
+        python3 -m pip install setuptools
       - id: set-matrix
         name: Fetch Build Matrix
         run: |
